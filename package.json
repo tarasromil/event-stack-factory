@@ -2,7 +2,7 @@
   "name": "event-stack-factory",
   "version": "1.0.0",
   "description": "Utility for handling Event Listeners which attached to window",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tarasromil/event-stack-factory.git"
@@ -23,5 +23,36 @@
   "bugs": {
     "url": "https://github.com/tarasromil/event-stack-factory/issues"
   },
-  "homepage": "https://github.com/tarasromil/event-stack-factory#readme"
+  "homepage": "https://github.com/tarasromil/event-stack-factory#readme",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "lint": "eslint .",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "pre-commit": [
+    "lint-staged",
+    "build"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "lint-staged": "^6.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.10.2",
+    "webpack": "^2.6.1"
+  }
 }
