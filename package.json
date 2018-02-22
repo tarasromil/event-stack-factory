@@ -1,0 +1,27 @@
+{
+  "name": "event-stack-factory",
+  "version": "1.0.0",
+  "description": "Utility for handling Event Listeners which attached to window",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarasromil/event-stack-factory.git"
+  },
+  "keywords": [
+    "event",
+    "event-listener",
+    "add-event-listener",
+    "remove-event-listener",
+    "onclick",
+    "onkeydown"
+  ],
+  "author": {
+    "name": "Taras Romilovych",
+    "email": "tarasromil@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarasromil/event-stack-factory/issues"
+  },
+  "homepage": "https://github.com/tarasromil/event-stack-factory#readme"
+}
